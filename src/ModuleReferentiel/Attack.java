@@ -1,3 +1,5 @@
+package ModuleReferentiel;
+
 public class Attack {
 
     public String nameAttack;

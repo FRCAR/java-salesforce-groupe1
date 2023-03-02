@@ -1,3 +1,5 @@
+package ModuleReferentiel;
+
 import java.util.ArrayList;
 
 public class Pokemon {

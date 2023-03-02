@@ -1,3 +1,5 @@
+package ModuleReferentiel;
+
 public class Carapuce extends Pokemon {
 
     // Exemple de 1 pokemon pour les phases de test

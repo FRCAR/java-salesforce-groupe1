@@ -1,10 +1,12 @@
+package ModuleReferentiel;
+
 import java.util.ArrayList;
 
 public class ReferentielPokemons {
 
     private Pokemon pokemonId;
 
-    public static ArrayList<Pokemon> listPokemons() {
+    public ArrayList<Pokemon> listPokemons() {
 
         ArrayList<Pokemon> pokemons = new ArrayList<>();
 
