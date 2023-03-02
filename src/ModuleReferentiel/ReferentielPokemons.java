@@ -4,17 +4,17 @@ import java.util.ArrayList;
 
 public class ReferentielPokemons {
 
-    private static Pokemon pokemonId;
+    private Pokemon pokemonId;
 
-    // Récupérer tous les Pokémons TODO
-    public static ArrayList<Pokemon> getAllPokemons() {
+    // Récupérer tous les Pokémons
+    public ArrayList<Pokemon> getAllPokemons() {
 
         return Pokemon.Pokemons();
 
     };
 
-    // Récupérer un Pokémon par son ID TODO
-    public static Pokemon getPokemonById(int id) {
+    // Récupérer un Pokémon par son ID
+    public Pokemon getPokemonById(int id) {
         ArrayList<Pokemon> allPokemons = new ArrayList<>();
 
         allPokemons = getAllPokemons();
@@ -28,22 +28,12 @@ public class ReferentielPokemons {
 
     };
 
-    // Modifier le nom d'un pokémon TODO
-    public static void updatePokemon(Pokemon p) {
+    // Modifier le nom d'un pokémon
+    public void updatePokemon(Pokemon p) {
 
         System.out.println(p.getName());
         p.setName("Dodo");
         System.out.println(p.getName());
-
-    }
-
-    public static void main(String[] args) {
-
-        // System.out.println(getAllPokemons());
-
-        // System.out.println(getPokemonById(10));
-
-        // updatePokemon(getPokemonById(10));
 
     }
 
