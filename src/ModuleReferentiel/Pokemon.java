@@ -1,4 +1,4 @@
-package ModuleRéférentiel;
+package ModuleReferentiel;
 
 import java.util.ArrayList;
 
@@ -36,23 +36,18 @@ public class Pokemon {
 
     public static ArrayList<Pokemon> Pokemons() {
 
-        ArrayList<Pokemon> persons = new ArrayList<>();
+        ArrayList<Pokemon> pokemons = new ArrayList<>();
 
-        Pokemon john = new Carapuce("Carapuce1", 10);
+        pokemons.add(new Carapuce("Carapuce1", 10));
+        pokemons.add(new Carapuce("Carapuce2", 15));
+        pokemons.add(new Carapuce("Carapuce3", 23));
 
-        persons.add(john);
+        // for (Pokemon pokemon : pokemons) {
+        // System.out.println(pokemon.getName());
+        // System.out.println(pokemon.getId());
+        // }
 
-        persons.add(new Carapuce("Carapuce2", 15));
-        persons.add(new Carapuce("Carapuce3", 23));
-
-        for (Pokemon person : persons) {
-            System.out.println(person.getName());
-            System.out.println(person.getId());
-        }
-
-        // System.out.println(persons);
-
-        return persons;
+        return pokemons;
 
     };
 

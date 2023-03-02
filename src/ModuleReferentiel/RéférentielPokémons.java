@@ -1,20 +1,20 @@
-package ModuleRéférentiel;
+package ModuleReferentiel;
 
 import java.util.ArrayList;
 
 public class RéférentielPokémons {
 
-    private static Pokemon pokemonId;
+    private Pokemon pokemonId;
 
     // Récupérer tous les Pokémons TODO
-    public static ArrayList<Pokemon> getAllPokemons() {
+    public ArrayList<Pokemon> getAllPokemons() {
 
         return Pokemon.Pokemons();
 
     };
 
     // Récupérer un Pokémon par son ID TODO
-    public static Pokemon getPokemonById(int id) {
+    public Pokemon getPokemonById(int id) {
         ArrayList<Pokemon> allPokemons = new ArrayList<>();
 
         allPokemons = getAllPokemons();
@@ -29,7 +29,7 @@ public class RéférentielPokémons {
     };
 
     // Modifier le nom d'un pokémon TODO
-    public static void updatePokemon(Pokemon p) {
+    public void updatePokemon(Pokemon p) {
 
         System.out.println(p.getName());
         p.setName("Dodo");
