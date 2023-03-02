@@ -8,8 +8,31 @@ import ModuleReferentiel.ReferentielPokemons;
 public class ModuleEntrainement {
 
     public static Arene areneChoisie;
+    public static int nbrTour = 1;
+    public static int currentPvP1;
+    public static int currentPvP2;
 
     public static void fightPokemon(Pokemon p1, Pokemon p2, Arene arene) {
+        System.out.println(
+                "\nCombat entre : " + p1.getName() + " et " + p2.getName() + " \nDans l'arène : " + arene.getName());
+
+        while (!p1.getIsKO() || !p2.getIsKO()) {
+            System.out.println("\nDébut tour -> " + nbrTour);
+            double variable1 = Math.random();
+            int variable2 = variable1 > 0.5 ? 1 : 0;
+
+            switch (variable2) {
+                case 0 -> {
+                    p1.attaqueAutrePokemon(p1, p2);
+                }
+                case 1 -> {
+                    p2.attaqueAutrePokemon(p2, p1);
+                }
+            }
+
+            nbrTour++;
+        }
+
     }
 
     public static void main(String[] args) {
@@ -17,17 +40,19 @@ public class ModuleEntrainement {
         ReferentielPokemons leReferentiel = new ReferentielPokemons();
         leReferentiel.listPokemons();
 
+        // System.out.println(leReferentiel.listPokemons());
+
         Arene arenes = new Arene();
         arenes.listeArene();
 
         for (Arene arene : arenes.listeArene()) {
-            System.out.println(arene.getName());
+            // System.out.println(arene.getName());
             if (arene.getName() == "Prairie") {
                 areneChoisie = arene;
             }
         }
 
-        fightPokemon(leReferentiel.getPokemonById(10), leReferentiel.getPokemonById(10), areneChoisie);
+        fightPokemon(leReferentiel.getPokemonById(1), leReferentiel.getPokemonById(4), areneChoisie);
 
     }
 

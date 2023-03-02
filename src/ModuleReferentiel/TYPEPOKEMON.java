@@ -1,5 +1,5 @@
 package ModuleReferentiel;
 
-public enum Type {
+public enum TYPEPOKEMON {
     EAU, FEU, AIR, SOL;
 }

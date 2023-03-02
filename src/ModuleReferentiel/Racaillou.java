@@ -1,15 +1,13 @@
 package ModuleReferentiel;
 
-public class Carapuce extends Pokemon {
-
-    public Carapuce(String nomPokemon, int idPokemon) {
+public class Racaillou extends Pokemon {
+    public Racaillou(String nomPokemon, int idPokemon) {
         super(nomPokemon, idPokemon);
-        this.type = TYPEPOKEMON.EAU;
+        this.type = TYPEPOKEMON.FEU;
         this.pointDeVieMax = 100;
         this.pointDeVie = this.pointDeVieMax;
         this.pointDExperience = 0;
-        this.attack = new Attack("plouf", TYPEPOKEMON.EAU, 20);
+        this.attack = new Attack("écrasement", TYPEPOKEMON.SOL, 18);
         this.isKO = false;
     }
-
 }

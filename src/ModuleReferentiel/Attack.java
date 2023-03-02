@@ -3,12 +3,12 @@ package ModuleReferentiel;
 public class Attack {
 
     public String nameAttack;
-    public Type type;
+    public TYPEPOKEMON type;
     public int power;
     public int valueAtkLancer;
     public int valueAtkRecu;
 
-    public Attack(String nameAttack, Type type, int power) {
+    public Attack(String nameAttack, TYPEPOKEMON type, int power) {
         this.nameAttack = nameAttack;
         this.type = type;
         this.power = power;
@@ -18,7 +18,7 @@ public class Attack {
         return nameAttack;
     }
 
-    public Type getType() {
+    public TYPEPOKEMON getType() {
         return type;
     }
 
@@ -26,7 +26,7 @@ public class Attack {
         return power;
     }
 
-    public int arrayBonusAttack(Type atkLancer, Type atkRecu) {
+    public int arrayBonusAttack(TYPEPOKEMON atkLancer, TYPEPOKEMON atkRecu) {
 
         switch (atkLancer) {
             case EAU -> {

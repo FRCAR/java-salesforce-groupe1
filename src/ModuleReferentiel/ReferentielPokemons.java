@@ -10,9 +10,12 @@ public class ReferentielPokemons {
 
         ArrayList<Pokemon> pokemons = new ArrayList<>();
 
-        pokemons.add(new Carapuce("Carapuce1", 10, new Attack("Plouf", Type.EAU, 20)));
-        pokemons.add(new Carapuce("Carapuce2", 15, new Attack("Plouf", Type.EAU, 30)));
-        pokemons.add(new Carapuce("Carapuce3", 23, new Attack("Plouf", Type.EAU, 40)));
+        pokemons.add(new Carapuce("Carapuce1", 1));
+        pokemons.add(new Carapuce("Carapuce2", 2));
+        pokemons.add(new Carapuce("Salamèche1", 3));
+        pokemons.add(new Carapuce("Racaillou1", 4));
+        pokemons.add(new Carapuce("Racaillou2", 5));
+        pokemons.add(new Carapuce("Roucoul1", 6));
 
         return pokemons;
 
