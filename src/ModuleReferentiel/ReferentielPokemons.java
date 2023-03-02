@@ -23,7 +23,9 @@ public class ReferentielPokemons {
             if (pokemon.getId() == id) {
                 pokemonId = pokemon;
             }
+
         }
+
         return pokemonId;
 
     };

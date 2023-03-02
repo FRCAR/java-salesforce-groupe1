@@ -41,7 +41,13 @@ public class Pokemon {
 
     @Override
     public String toString() {
-        return this.id + " " + this.name + " " + this.hp + " " + this.xp + " " + this.type;
+        return "ID: " + this.id + " " +
+                " NOM: " + this.name + " " +
+                "NB PT DE VIE: " + this.hp + " " +
+                "EXPERIENCE: "
+                + this.xp
+                + " " +
+                "TYPE:" + this.type + "";
     }
 
     public Pokemon(int id, String name, int hp, int xp, String type) {
@@ -56,17 +62,20 @@ public class Pokemon {
 
         ArrayList<Pokemon> pokemons = new ArrayList<>();
 
-        pokemons.add(new Carapuce(10, "Carapuce1", 100, 0, "eau"));
+        pokemons.add(new Carapuce(10, "Carapuce1", 100, 3, "eau"));
         pokemons.add(new Carapuce(15, "Carapuce2", 100, 0, "eau"));
-        pokemons.add(new Carapuce(23, "Carapuce3", 100, 0, "eau"));
+        pokemons.add(new Carapuce(23, "Carapuce3", 100, 4, "eau"));
 
         // for (Pokemon pokemon : pokemons) {
         // System.out.println(pokemon.getName());
         // System.out.println(pokemon.getId());
+        // System.out.println(pokemon.getType());
+        // System.out.println(pokemon.getXp());
+        // System.out.println(pokemon.getHp());
+
         // }
 
         return pokemons;
-
-    };
+    }
 
 }
