@@ -2,7 +2,7 @@ package ModuleReferentiel;
 
 import java.util.ArrayList;
 
-public class RéférentielPokémons {
+public class ReferentielPokemons {
 
     private Pokemon pokemonId;
 
