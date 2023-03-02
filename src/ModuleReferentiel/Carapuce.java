@@ -1,4 +1,5 @@
 
+
 public class Carapuce extends Pokemon{
     private String type = "Eau";
     private int pointVieMax = 100;

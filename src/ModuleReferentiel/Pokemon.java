@@ -1,12 +1,13 @@
 
+
 public class Pokemon {
 
 
-    private int pointDeVie=100;
-    private int pointDExperience=0;
+    public int pointDeVie=100;
+    public int pointDExperience=0;
     //private ArrayList<Pokemon> pokemonList = new ArrayList<>(); to be transfered to entrainement
     private Boolean isKO;
-    private Attaque unAttaque;
+    //private Attaque unAttaque;
 
 
 

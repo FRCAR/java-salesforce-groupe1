@@ -1,10 +1,11 @@
 ;
+
 public class Racaillou extends Pokemon{
-    private String type = "Sol";
-    private int pointVieMax = 110;
-    private Attaque attaqueDeRacaillou = new Attaque("ecrasement");
-    private int idPokemon;
-    private String nomPokemon;
+    public String type = "Sol";
+    public int pointVieMax = 110;
+    public Attaque attaqueDeRacaillou = new Attaque("ecrasement");
+    public int idPokemon;
+    public String nomPokemon;
 
 
     public Racaillou(String nomPokemon, int idPokemon){
