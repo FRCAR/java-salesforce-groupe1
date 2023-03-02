@@ -1,15 +1,30 @@
-package ModuleReferentiel;
-
 import java.util.ArrayList;
 
 public class ReferentielPokemons {
 
     private Pokemon pokemonId;
 
+    public static ArrayList<Pokemon> listPokemons() {
+
+        ArrayList<Pokemon> pokemons = new ArrayList<>();
+
+        pokemons.add(new Carapuce("Carapuce1", 10, new Attack("Plouf", Type.EAU, 20)));
+        pokemons.add(new Carapuce("Carapuce2", 15, new Attack("Plouf", Type.EAU, 30)));
+        pokemons.add(new Carapuce("Carapuce3", 23, new Attack("Plouf", Type.EAU, 40)));
+
+        return pokemons;
+
+    }
+
     // Récupérer tous les Pokémons TODO
     public ArrayList<Pokemon> getAllPokemons() {
 
-        return Pokemon.Pokemons();
+        // for (Pokemon pokemon : pokemons) {
+        // System.out.println(pokemon.getName());
+        // System.out.println(pokemon.getId());
+        // }
+
+        return listPokemons();
 
     };
 
@@ -44,6 +59,10 @@ public class ReferentielPokemons {
         // System.out.println(getPokemonById(10));
 
         // updatePokemon(getPokemonById(10));
+
+        // for (Pokemon pokemon : listPokemons()) {
+        // System.out.println(pokemon.getAttack().getNameAttack());
+        // }
 
     }
 

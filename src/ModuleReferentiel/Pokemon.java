@@ -1,5 +1,3 @@
-package ModuleReferentiel;
-
 import java.util.ArrayList;
 
 public class Pokemon {
@@ -7,6 +5,7 @@ public class Pokemon {
     // Exemple rapide de la classe Pokémon pour les phases de test
     private int id;
     private String name;
+    public Attack attack;
 
     public String getName() {
         return this.name;
@@ -24,31 +23,19 @@ public class Pokemon {
         this.name = name;
     }
 
+    public Attack getAttack() {
+        return attack;
+    }
+
     @Override
     public String toString() {
-        return this.name + " " + this.id;
+        return this.name + " " + this.id + " " + this.attack;
     }
 
-    public Pokemon(String name, int id) {
+    public Pokemon(String name, int id, Attack attack) {
         this.name = name;
         this.id = id;
+        this.attack = attack;
     }
-
-    public static ArrayList<Pokemon> Pokemons() {
-
-        ArrayList<Pokemon> pokemons = new ArrayList<>();
-
-        pokemons.add(new Carapuce("Carapuce1", 10));
-        pokemons.add(new Carapuce("Carapuce2", 15));
-        pokemons.add(new Carapuce("Carapuce3", 23));
-
-        // for (Pokemon pokemon : pokemons) {
-        // System.out.println(pokemon.getName());
-        // System.out.println(pokemon.getId());
-        // }
-
-        return pokemons;
-
-    };
 
 }
