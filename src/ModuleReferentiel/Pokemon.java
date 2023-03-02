@@ -7,69 +7,9 @@ public class Pokemon {
     // Exemple rapide de la classe Pokémon pour les phases de test
     private int id;
     private String name;
-    private String type;
     private int xp;
+    private String type;
     private int hp;
-
-    public String getName() {
-        return this.name;
-    }
-
-    public int getId() {
-        return this.id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return this.name + " " + this.id + " " + this.type + " " + this.xp + " " + this.hp;
-    }
-
-    public Pokemon(String name, int id, String type, int xp, int hp) {
-        this.name = name;
-        this.id = id;
-        this.type = type;
-        this.xp = xp;
-        this.hp = hp;
-
-    }
-
-    public static ArrayList<Pokemon> Pokemons() {
-
-        ArrayList<Pokemon> persons = new ArrayList<>();
-
-        Pokemon john = new Carapuce("Carapuce1", 0, "Caparapuce", 2, 3);
-
-        persons.add(new Carapuce("Salameche1", 1, "Salameche", 6, 8));
-        persons.add(new Carapuce("Roucoul1", 2, "Roucoul", 7, 10));
-        persons.add(new Carapuce("Racaillou", 3, "Roucoul", 17, 20));
-
-        for (Pokemon person : persons) {
-            System.out.println(person.getName());
-            System.out.println(person.getId());
-        }
-
-        System.out.println(john);
-        return persons;
-
-        // return persons;
-
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
 
     public int getXp() {
         return xp;
@@ -79,12 +19,54 @@ public class Pokemon {
         this.xp = xp;
     }
 
+    public String getType() {
+        return type;
+    }
+
     public int getHp() {
         return hp;
     }
 
-    public void setHp(int hp) {
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    @Override
+    public String toString() {
+        return this.id + " " + this.name + " " + this.hp + " " + this.xp + " " + this.type;
+    }
+
+    public Pokemon(int id, String name, int hp, int xp, String type) {
+        this.id = id;
+        this.name = name;
         this.hp = hp;
+        this.xp = xp;
+        this.type = type;
+    }
+
+    public static ArrayList<Pokemon> Pokemons() {
+
+        ArrayList<Pokemon> pokemons = new ArrayList<>();
+
+        pokemons.add(new Carapuce(10, "Carapuce1", 100, 0, "eau"));
+        pokemons.add(new Carapuce(15, "Carapuce2", 100, 0, "eau"));
+        pokemons.add(new Carapuce(23, "Carapuce3", 100, 0, "eau"));
+
+        // for (Pokemon pokemon : pokemons) {
+        // System.out.println(pokemon.getName());
+        // System.out.println(pokemon.getId());
+        // }
+
+        return pokemons;
+
     };
 
 }
