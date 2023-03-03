@@ -14,6 +14,10 @@ public class Attack {
         this.power = power;
     }
 
+    public Attack() {
+
+    }
+
     public String getNameAttack() {
         return nameAttack;
     }
@@ -64,6 +68,7 @@ public class Attack {
                 { 100, 125, 100, 75 },
                 { 75, 100, 125, 100 }
         };
+
         return arrayBonus[valueAtkLancer][valueAtkRecu];
 
     }

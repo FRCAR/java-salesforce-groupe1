@@ -16,21 +16,22 @@ public class ModuleEntrainement {
         System.out.println(
                 "\nCombat entre : " + p1.getName() + " et " + p2.getName() + " \nDans l'arène : " + arene.getName());
 
-        while (!p1.getIsKO() || !p2.getIsKO()) {
+        while (!p1.getIsKO() && !p2.getIsKO()) {
             System.out.println("\nDébut tour -> " + nbrTour);
             double variable1 = Math.random();
             int variable2 = variable1 > 0.5 ? 1 : 0;
 
             switch (variable2) {
                 case 0 -> {
-                    p1.attaqueAutrePokemon(p1, p2);
+                    ModuleCombat.attaqueAutrePokemon(p1, p2);
                 }
                 case 1 -> {
-                    p2.attaqueAutrePokemon(p2, p1);
+                    ModuleCombat.attaqueAutrePokemon(p2, p1);
                 }
             }
-
             nbrTour++;
+
+            System.out.println("\n*-----------------------------------------------------------------*");
         }
 
     }
@@ -52,7 +53,7 @@ public class ModuleEntrainement {
             }
         }
 
-        fightPokemon(leReferentiel.getPokemonById(1), leReferentiel.getPokemonById(4), areneChoisie);
+        fightPokemon(leReferentiel.getPokemonById(5), leReferentiel.getPokemonById(6), areneChoisie);
 
     }
 
