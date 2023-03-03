@@ -7,7 +7,7 @@ public class Racaillou extends Pokemon {
         this.especePokemon = "Racaillou";
         this.pointDeVieMax = 110;
         this.pointDeVie = this.pointDeVieMax;
-        this.pointDExperience = 0;
+        this.pointDExperience = 4;
         this.attack = new Attack("écrasement", TYPEPOKEMON.SOL, 18);
         this.isKO = false;
     }

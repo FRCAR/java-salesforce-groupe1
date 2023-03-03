@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Arene {
 
-    private static int id; // encapsulation de l'attribut (private)
+    public int id; // encapsulation de l'attribut (private)
     public String name; // final?
     public String type; // prairie , volcan , mare acide
     public Boolean singleEffect;
@@ -18,7 +18,8 @@ public class Arene {
      * @param boolean
      * @param boolean
      */
-    public Arene(String name, String type, Boolean singleEffect, Boolean multiEffect) {
+    public Arene(int id, String name, String type, Boolean singleEffect, Boolean multiEffect) {
+        this.id = id;
         this.name = name;
         this.type = type;
         this.singleEffect = singleEffect;
@@ -38,7 +39,7 @@ public class Arene {
 
     // ATTRIBUT - ID //
     public int getId() {
-        return id;
+        return this.id;
     }
 
     // ATTRIBUT - NAME //
@@ -65,13 +66,17 @@ public class Arene {
     // METHODES
     // * ------------------ */
 
+    public void setSingleEffect(Boolean singleEffect) {
+        this.singleEffect = singleEffect;
+    }
+
     // création d'une méthode : pour créer des arènes
     public ArrayList<Arene> listeArene() {
         // ajout des arènes dans ArrayList
         ArrayList<Arene> arenes = new ArrayList<>();
-        arenes.add(new Prairie("Prairie", "Prairie", false, false));
-        arenes.add(new Volcan("Volcan", "Volcan", true, false));
-        arenes.add(new MareAcide("Mare Acide", "Mare Acide", false, true));
+        arenes.add(new Prairie(1, "Prairie", "Prairie", false, false));
+        arenes.add(new Volcan(2, "Volcan", "Volcan", true, false));
+        arenes.add(new MareAcide(3, "Mare Acide", "Mare Acide", false, true));
 
         // for (Arene arene : arenes) {
         // System.out.println(arene.getName()); // affichage de toutes les arènes créée

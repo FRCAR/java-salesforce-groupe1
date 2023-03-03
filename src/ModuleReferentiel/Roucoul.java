@@ -7,7 +7,7 @@ public class Roucoul extends Pokemon {
         this.especePokemon = "Roucoul";
         this.pointDeVieMax = 90;
         this.pointDeVie = this.pointDeVieMax;
-        this.pointDExperience = 0;
+        this.pointDExperience = 1;
         this.attack = new Attack("battement", TYPEPOKEMON.AIR, 23);
         this.isKO = false;
     }

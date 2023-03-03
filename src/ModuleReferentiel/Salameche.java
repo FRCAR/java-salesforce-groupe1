@@ -7,7 +7,7 @@ public class Salameche extends Pokemon {
         this.especePokemon = "Salameche";
         this.pointDeVieMax = 100;
         this.pointDeVie = this.pointDeVieMax;
-        this.pointDExperience = 0;
+        this.pointDExperience = 10;
         this.attack = new Attack("flamèche", TYPEPOKEMON.FEU, 20);
         this.isKO = false;
     }

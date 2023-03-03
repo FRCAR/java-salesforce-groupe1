@@ -5,17 +5,19 @@ import java.util.ArrayList;
 public class ReferentielPokemons {
 
     private Pokemon pokemonId;
+    private static ArrayList<Pokemon> pokemons = new ArrayList<>();
+    static {
+
+        pokemons.add(new Carapuce("Carapuce1", 1));
+        pokemons.add(new Carapuce("Carapuce2", 2));
+        pokemons.add(new Salameche("Salameche1", 3));
+        pokemons.add(new Racaillou("Racaillou1", 4));
+        pokemons.add(new Racaillou("Racaillou2", 5));
+        pokemons.add(new Roucoul("Roucoul1", 6));
+
+    }
 
     public ArrayList<Pokemon> listPokemons() {
-
-        ArrayList<Pokemon> pokemons = new ArrayList<>();
-
-        pokemons.add(new Carapuce("Carapuce 1", 1));
-        pokemons.add(new Carapuce("Carapuce 2", 2));
-        pokemons.add(new Salameche("Salamèche 1", 3));
-        pokemons.add(new Racaillou("Racaillou 1", 4));
-        pokemons.add(new Racaillou("Racaillou 2", 5));
-        pokemons.add(new Roucoul("Roucoul 1", 6));
 
         return pokemons;
 
@@ -45,6 +47,24 @@ public class ReferentielPokemons {
             }
         }
         return pokemonId;
+
+    };
+
+    // Récupérer un Pokémon par son nom TODO
+    public Pokemon getPokemonByName(String name) {
+        Pokemon pokemonName = null;
+
+        ArrayList<Pokemon> allPokemons = new ArrayList<>();
+
+        allPokemons = getAllPokemons();
+
+        for (Pokemon pokemon : allPokemons) {
+            if (name.equals(pokemon.getName())) {
+                pokemonName = pokemon;
+            }
+        }
+
+        return pokemonName;
 
     };
 

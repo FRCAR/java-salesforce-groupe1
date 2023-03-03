@@ -1,7 +1,5 @@
 package ModuleReferentiel;
 
-import java.util.ArrayList;
-
 public class Pokemon {
 
     // Exemple rapide de la classe Pokémon pour les phases de test
