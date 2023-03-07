@@ -55,26 +55,4 @@ public class ModuleEntrainement {
 
     }
 
-    // public static void main(String[] args) {
-
-    // ReferentielPokemons leReferentiel = new ReferentielPokemons();
-    // leReferentiel.listPokemons();
-
-    // // System.out.println(leReferentiel.listPokemons());
-
-    // Arene arenes = new Arene();
-    // arenes.listeArene();
-
-    // for (Arene arene : arenes.listeArene()) {
-    // // System.out.println(arene.getName());
-    // if (arene.getName() == "Prairie") {
-    // areneChoisie = arene;
-    // }
-    // }
-
-    // fightPokemon(leReferentiel.getPokemonById(5),
-    // leReferentiel.getPokemonById(6), areneChoisie);
-
-    // }
-
 }

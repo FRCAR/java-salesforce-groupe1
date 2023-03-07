@@ -45,8 +45,6 @@ public class ModuleCombat {
             System.out.println(
                     "Le pokemon : " + pkmWin.getName() + " a gagné : 100 points d'xp");
             pkmWin.setPointDExperience(pkmWin.getPointDExperience() + 100);
-            System.out.println("Testttttttttttttttt" + pkmWin.getPointDExperience());
-            System.out.println("Testttttttttttttttt" + pkmWin.getName());
         }
 
     }

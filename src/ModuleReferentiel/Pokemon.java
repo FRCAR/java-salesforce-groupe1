@@ -74,15 +74,4 @@ public class Pokemon {
         this.idPokemon = idPokemon;
     }
 
-    // @Override
-    // public String toString() {
-    // return this.name + " " + this.id + " " + this.attack;
-    // }
-
-    // public Pokemon(String name, int id, Attack attack) {
-    // this.nomPokemon = name;
-    // this.idPokemon = id;
-    // this.attack = attack;
-    // }
-
 }

@@ -78,9 +78,6 @@ public class Arene {
         arenes.add(new Volcan(2, "Volcan", "Volcan", true, false));
         arenes.add(new MareAcide(3, "Mare Acide", "Mare Acide", false, true));
 
-        // for (Arene arene : arenes) {
-        // System.out.println(arene.getName()); // affichage de toutes les arènes créée
-        // }
         return arenes;
 
     }

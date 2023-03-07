@@ -2,9 +2,6 @@ package ModuleEntrainement;
 
 public class Volcan extends Arene { // extends = héritage
 
-    // effet unique = perte de 20 pts de vie
-    // effet permanent = aucun
-
     /**
      * 
      * @param name

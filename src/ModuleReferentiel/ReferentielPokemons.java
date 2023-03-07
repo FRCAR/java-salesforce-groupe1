@@ -26,11 +26,6 @@ public class ReferentielPokemons {
     // Récupérer tous les Pokémons TODO
     public ArrayList<Pokemon> getAllPokemons() {
 
-        // for (Pokemon pokemon : pokemons) {
-        // System.out.println(pokemon.getName());
-        // System.out.println(pokemon.getId());
-        // }
-
         return listPokemons();
 
     };
@@ -74,20 +69,6 @@ public class ReferentielPokemons {
         System.out.println(p.getName());
         p.setName("Dodo");
         System.out.println(p.getName());
-
-    }
-
-    public static void main(String[] args) {
-
-        // System.out.println(getAllPokemons());
-
-        // System.out.println(getPokemonById(10));
-
-        // updatePokemon(getPokemonById(10));
-
-        // for (Pokemon pokemon : listPokemons()) {
-        // System.out.println(pokemon.getAttack().getNameAttack());
-        // }
 
     }
 

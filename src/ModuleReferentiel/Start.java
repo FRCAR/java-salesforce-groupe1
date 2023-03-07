@@ -18,7 +18,6 @@ public class Start {
                 "Veuillez choisir une des fonctionnalités suivantes : \n1. Afficher dans la console une liste de tous les identifiants et noms d\'un pokémon \n2. Afficher dans la console une liste triée de tous les pokémons par expérience \n3. Afficher dans la console le détail d\'un pokémon (choisi par son id) \n4. Afficher dans le console une liste de toutes les arènes \n5. Faire combattre deux pokémon dans une arène");
         int choixMainScanner = mainScanner.nextInt();
         optionDisplay(choixMainScanner);
-        // return choixMainScanner;
 
     }
 
@@ -146,9 +145,6 @@ public class Start {
                 areneChoisie = arene;
             }
         }
-
-        // System.out.println(leReferentiel.getPokemonByName("Racaillou1").getClass());
-        // System.out.println(pokemonName1.getClass());
 
         moduleEntrainement.fightPokemon(poke1, poke2, areneChoisie);
     }
