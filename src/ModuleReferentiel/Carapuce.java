@@ -8,7 +8,7 @@ public class Carapuce extends Pokemon {
         this.especePokemon = "Carapuce";
         this.pointDeVieMax = 100;
         this.pointDeVie = this.pointDeVieMax;
-        this.pointDExperience = 0;
+        this.pointDExperience = 6;
         this.attack = new Attack("plouf", TYPEPOKEMON.EAU, 20);
         this.isKO = false;
     }

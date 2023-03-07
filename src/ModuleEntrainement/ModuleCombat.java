@@ -37,15 +37,26 @@ public class ModuleCombat {
 
     public static void calculExp(Pokemon pkmWin, Pokemon pkmLose) {
         if (pkmLose.getPointDExperience() / 3 >= 100) {
+            System.out.println(
+                    "Le pokemon : " + pkmWin.getName() + " a gagné : " + pkmLose.getPointDExperience() / 3
+                            + " points d'xp");
             pkmWin.setPointDExperience(pkmWin.getPointDExperience() + pkmLose.getPointDExperience() / 3);
         } else if (pkmLose.getPointDExperience() / 3 < 100) {
+            System.out.println(
+                    "Le pokemon : " + pkmWin.getName() + " a gagné : 100 points d'xp");
             pkmWin.setPointDExperience(pkmWin.getPointDExperience() + 100);
+            System.out.println("Testttttttttttttttt" + pkmWin.getPointDExperience());
+            System.out.println("Testttttttttttttttt" + pkmWin.getName());
         }
-        System.out.println(
-                "Le pokemon : " + pkmWin.getName() + " a gagné : " + pkmWin.getPointDExperience() + " points d'xp");
+
     }
 
     public static void msgAtkTour(Pokemon p1, Pokemon p2) {
+
+        if (p2.getPointDeVie() < 0) {
+            p2.setPointDeVie(0);
+        }
+
         System.out.println(
                 "Le pokémon : " + p2.getName() + " se fait attaquer par "
                         + p1.getAttack().getNameAttack()
